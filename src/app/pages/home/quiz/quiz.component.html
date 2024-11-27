@@ -1,0 +1,5 @@
+<ul>
+  @for (quiz of quizzes; track quiz.id) {
+    <li><a [routerLink]="['/quiz', quiz.id]">{{quiz.name}} ({{quiz.difficulty}}) - {{quiz.datePublication.toISOString()}}</a></li>
+  }
+</ul>
